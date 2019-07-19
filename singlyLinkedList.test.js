@@ -1,6 +1,17 @@
 const list = require('./singlyLinkedList.js');
 
-test('add 1 node(1) to linedList', () => {
-  let test = list.push(1);
-  expect(test.length).toBe(1);
-})
+describe('singlyLinkedList', () => {
+  test('pushing one node', () => {
+    let test = list;
+    test.push(0);
+    expect(test.length).toEqual(1);
+  });
+
+  test('pushing two nodes', () => {
+    let test2 = list;
+    console.log(test2);
+    test2.remove(0);
+    test2.push(0);
+    expect(test2.length).toEqual(1);
+  })
+});
