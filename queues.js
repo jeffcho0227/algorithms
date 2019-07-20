@@ -11,7 +11,8 @@ class Queue {
   constructor() {
     this.first = null;
     this.last = null;
-    this.size;
+    this.size = 0;
+
   }
 
   //adding to the end of the list
@@ -24,7 +25,7 @@ class Queue {
       this.last.next = newNode;
       this.last = newNode;
     }
-    this.size++;
+    return ++this.size;
   }
 
   //removing from the front and shifting everthing 
