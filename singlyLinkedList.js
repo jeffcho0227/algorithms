@@ -142,7 +142,7 @@ class SinglyLinkedList {
   reverse() {
     let node = this.head;
     this.head = this.tail; 
-    this.tail = nbode;
+    this.tail = node;
     let next;
     let prev = null;
     for(let i = 0; i < this.length; i++) {
